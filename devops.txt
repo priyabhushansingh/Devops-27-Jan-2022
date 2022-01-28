@@ -1,0 +1,208 @@
+    1  ip addr 
+    2  ping google.com
+    3  exit 
+    4  apt-get update
+    5  git versio
+    6  git version
+    7  git --version
+    8  mkdir myfirstproj
+    9  cd myfirstproj/
+   10  ls
+   11  git status
+   12  ls -a
+   13  git init
+   14  git status
+   15  ls -a
+   16  git config --global --list
+   17  git config --global user.name "Priya Singh"
+   18  git config --global user.email "priya.s@daimler.com"
+   19  git config --global --list
+   20  git config --global core.editor vi
+   21  git config --global help.autocorrect 1 
+   22  git config --global --list
+   23  ls
+   24  ls -a
+   25  echo "Hello World" >README.txt
+   26  cat README.txt
+   27  git status
+   28  git add README.txt
+   29  git status
+   30  git commit
+   31  git logs
+   32  echo "welcome to the world of GIT" >> README.txt
+   33  git status
+   34  ls
+   35  echo "hello world -2" > Hello.txt
+   36  git status
+   37  git add .
+   38  git commit -m "adding hello.txt"
+   39  git status
+   40  git log
+   41  history
+   42  ls
+   43  echo "Apple Pie"| git hash-object --stdin
+   44  echo "Apple PiE"| git hash-object --stdin
+   45  echo "Apple Pie"| git hash-object --stdin
+   46  echo "Apple Pie"| git hash-object --stdin -w
+   47  git cat-file
+   48  23991897e13e47ed0adb91a0082c31c82fe0cbe5 -t
+   49  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -t
+   50  git cat-file 23991897e13e47ed0adb91a0082c31c82fe0cbe5 -p
+   51  ls -a
+   52  cd .git/
+   53  ls
+   54  cd objects
+   55  ls
+   56  ls -ltr 23/991897e13e47ed0adb91a0082c31c82fe0cbe5
+   57  ls -ltr 23991897e13e47ed0adb91a0082c31c82fe0cbe5
+   58  ls
+   59  cd ..
+   60  git log 
+   61  echo "update-1" >> README.txt
+   62  git add .;git commit -m "test 1"
+   63  echo "update-2" >> README.txt
+   64  git add .;git commit -m "test 2"
+   65  git log
+   66  git diff 8f7ad8..d0c97e
+   67  rm hello.txt
+   68  ls
+   69  rm Hello.txt
+   70  git add .;git commit -m "deleting hello"
+   71  git log
+   72  git diff d0c97e..6f3ad3
+   73  ls
+   74  echo "Hello" >> hello.txt
+   75  ls
+   76  rm -rf hello.txt
+   77  ls
+   78  git status
+   79  echo "1" > priya.txt
+   80  echo "2" > prasoon.txt
+   81  ls
+   82  git add .
+   83  git status
+   84  git unstage prasoon.txt
+   85  git reset HEAD prasoon.txt
+   86  git status
+   87  git commit -m "new file-priya.txt"
+   88  git logs
+   89  git diff HEAD~1
+   90  git show HEAD
+   91  git branch
+   92  git show HEAD
+   93  cat .git/HEAD
+   94  cat .git/refs/heads/master
+   95  git log
+   96  git branch
+   97  git branch uat
+   98  git branch testing
+   99  git branch production
+  100  git branch
+  101  git branch -d production
+  102  git branch
+  103  git chechout uat
+  104  git checkout uat
+  105  git branch
+  106  git log
+  107  git head
+  108  git branch HEAD
+  109  echo "welcome to UAT" > UAT.txt
+  110  git add .;git commit -m "first commit to UAT"
+  111  git log
+  112  git show HEAD
+  113  cat .git/HEAD
+  114  cat .git/refs/heads/master
+  115  git logs --oneline
+  116  git checkout master
+  117  git logs
+  118  git logs --oneline
+  119  git checkout testing
+  120  echo "welcome to Test" > test.txt
+  121  ls
+  122  git checkout master
+  123  ls
+  124  echo "welcome to Master" > master.txt
+  125  ls
+  126  git add .; git commit -m "adding master.txt"
+  127  git checkout testing
+  128  ls
+  129  echo "welcome to Test" > test.txt
+  130  git add .; git commit -m "adding test.txt"
+  131  git checkout master
+  132  git merge testing
+  133  git branch
+  134  git logs
+  135  ls
+  136  git log --oneline --graph
+  137  git checkout uat
+  138  ls
+  139  git chekout master
+  140  git merge uat
+  141  git logs --oneline --graph
+  142  git branch
+  143  git branch -d testing
+  144  git branch -d uat
+  145  git logs --oneline --graph
+  146  git checkout uat
+  147  git clone https://github.com/amitvashisttech/devops-m-benz-27-Jan-2022.git
+  148  ls
+  149  cd devops-m-benz-27-Jan-2022/
+  150  ls
+  151  cd ..
+  152  git clone https://github.com/priyabhushansingh/Devops-27-Jan-2022
+  153  ls
+  154  cd myfirstproj/
+  155  cd devops-m-benz-27-Jan-2022/
+  156  cp -rf
+  157  cd ..
+  158  cp -rf devops-m-benz-27-Jan-2022/ 
+  159  cp /devops-m-benz-27-Jan-2022/* /Devops-27-Jan-2022
+  160  cp devops-m-benz-27-Jan-2022/* /Devops-27-Jan-2022
+  161  cp devops-m-benz-27-Jan-2022/* Devops-27-Jan-2022
+  162  cd ..
+  163  cd Devops-27-Jan-2022/
+  164  echo "#Devops-27-Jan-2022" > Readme.txt
+  165  git status
+  166  git init
+  167  git commit -am "First Commit"
+  168  git status
+  169  git add .;git commit -m "First Commit"
+  170  git status
+  171  git branch
+  172  git branch -M main
+  173  git branch
+  174  git config --list
+  175  git push -u origin main
+  176  git config --list
+  177  git remote add origin https://github.com/priyabhushansingh/Devops-27-Jan-2022.git
+  178  git remote delete origin
+  179  git remote remove origin
+  180  git remote add origin https://github.com/priyabhushansingh/Devops-27-Jan-2022.git
+  181  git push -u origin main
+  182  git config --list
+  183  git push -u origin main
+  184  cd ..
+  185  ls
+  186  rm -rf Devops-27-Jan-2022/
+  187  git clone https://github.com/priyabhushansingh/Devops-27-Jan-2022.git
+  188  ls
+  189  cd Devops-27-Jan-2022/
+  190  ls
+  191  echo "First Commit" > Readme.txt
+  192  git add . ; git commit -m "First commit"
+  193  git congig --list
+  194* git branch -M mai
+  195  git config --list
+  196  git push
+  197  git push origin master
+  198  git branch
+  199  git push origin main
+  200  echo histor > devops.txt
+  201  ls
+  202  cat devops
+  203  cat devops.txt
+  204  echo history >> devops.txt
+  205  cat devops.txt
+  206  echo history > devops.txt
+  207  cat devops.txt
+  208  history > devops.txt
