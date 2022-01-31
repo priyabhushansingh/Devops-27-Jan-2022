@@ -1,0 +1,17 @@
+#Base Image
+FROM ubuntu:16.04
+
+#Update the APT Repo
+RUN apt-get update
+
+#Install Apache Packeges
+RUN apt-get install apache2 -y
+
+#PORT Listening
+EXPOSE 80
+
+#Deploy Custom Webpage
+COPY mypage.html /var/www/html
+
+#Bring the apache app up
+CMD ["/usr/sbin/apache2ctl","-D","FOREGROUND"]
